@@ -8,6 +8,4 @@ RUN npm install
 
 COPY . .
 
-VOLUME [ "/app/feedback" ]
-
 CMD ["npm", "start"]
