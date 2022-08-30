@@ -8,6 +8,9 @@ RUN npm install
 
 COPY . .
 
+ENV PORT 80
+
+EXPOSE $PORT
 # VOLUME [ "/app/node_modules" ]
 
 # 익명 볼륨을 사용함으로서 바인드 마운트의 ro 옵션에서 제외(더 긴 경로이므로)
